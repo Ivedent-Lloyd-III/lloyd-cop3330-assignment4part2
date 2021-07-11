@@ -9,18 +9,18 @@
 
 <AnchorPane prefHeight="587.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListMakerController">
    <children>
-      <TableView layoutX="193.0" layoutY="41.0" prefHeight="500.0" prefWidth="575.0">
+      <TableView fx:id="appTable" layoutX="193.0" layoutY="41.0" prefHeight="500.0" prefWidth="575.0">
         <columns>
           <TableColumn prefWidth="51.199951171875" text="Status" />
-          <TableColumn minWidth="9.5999755859375" prefWidth="99.20001220703125" text="Due Date" />
+          <TableColumn fx:id="DueDateColumn" minWidth="9.5999755859375" prefWidth="99.20001220703125" text="Due Date" />
             <TableColumn prefWidth="140.7999267578125" text="Item" />
             <TableColumn prefWidth="283.1999694824219" text="Description" />
         </columns>
       </TableView>
-      <TextField layoutX="14.0" layoutY="41.0" onAction="#newItemTitleTextEntered" promptText="New Item Title" />
-      <TextField layoutX="14.0" layoutY="115.0" onAction="#newItemDescriptionTextEntered" promptText="New Item Due Date" />
-      <Button layoutX="42.0" layoutY="184.0" mnemonicParsing="false" onAction="#addNewItemButtonPressed" text="Add New Item" />
-      <TextField layoutX="14.0" layoutY="78.0" onAction="#newItemDescriptionTextEntered" promptText="New Item Description" />
+      <TextField fx:id="newItemTextField" layoutX="14.0" layoutY="41.0" promptText="New Item Title" />
+      <TextField fx:id="newItemDueDateTextField" layoutX="14.0" layoutY="115.0" promptText="New Item Due Date" />
+      <Button fx:id="addNewItemButton" layoutX="42.0" layoutY="184.0" mnemonicParsing="false" onAction="#addNewItemButtonPressed" text="Add New Item" />
+      <TextField fx:id="newItemDescriptioinTextField" layoutX="14.0" layoutY="78.0" promptText="New Item Description" />
    </children>
    <opaqueInsets>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
