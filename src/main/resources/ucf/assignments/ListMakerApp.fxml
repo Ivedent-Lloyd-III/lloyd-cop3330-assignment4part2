@@ -7,20 +7,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="587.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListMakerController">
+<AnchorPane prefHeight="604.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListMakerController">
    <children>
-      <TableView fx:id="appTable" layoutX="193.0" layoutY="41.0" prefHeight="500.0" prefWidth="575.0">
+      <TableView fx:id="tableView" layoutX="187.0" layoutY="14.0" prefHeight="577.0" prefWidth="639.0">
         <columns>
-          <TableColumn prefWidth="51.199951171875" text="Status" />
-          <TableColumn fx:id="DueDateColumn" minWidth="9.5999755859375" prefWidth="99.20001220703125" text="Due Date" />
-            <TableColumn prefWidth="140.7999267578125" text="Item" />
-            <TableColumn prefWidth="283.1999694824219" text="Description" />
+          <TableColumn fx:id="itemsStatusColumn" prefWidth="104.00001525878906" text="Status" />
+          <TableColumn fx:id="itemDueDateColumn" minWidth="9.5999755859375" prefWidth="76.800048828125" text="Due Date" />
+            <TableColumn fx:id="itemsNameColumn" prefWidth="151.2000732421875" text="Item" />
+            <TableColumn fx:id="itemsDescriptionColumn" prefWidth="310.39990234375" text="Description" />
         </columns>
       </TableView>
-      <TextField fx:id="newItemTextField" layoutX="14.0" layoutY="41.0" promptText="New Item Title" />
-      <TextField fx:id="newItemDueDateTextField" layoutX="14.0" layoutY="115.0" promptText="New Item Due Date" />
-      <Button fx:id="addNewItemButton" layoutX="42.0" layoutY="184.0" mnemonicParsing="false" onAction="#addNewItemButtonPressed" text="Add New Item" />
-      <TextField fx:id="newItemDescriptioinTextField" layoutX="14.0" layoutY="78.0" promptText="New Item Description" />
+      <TextField fx:id="newItemTitleTextField" layoutX="14.0" layoutY="14.0" promptText="New Item Title" />
+      <TextField fx:id="newItemDueDateTextField" layoutX="14.0" layoutY="67.0" promptText="New Item Due Date" />
+      <Button fx:id="addNewItemButton" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onAction="#addButtonClicked" text="Add New Item" />
+      <TextField fx:id="newItemDescriptioinTextField" layoutX="14.0" layoutY="41.0" promptText="New Item Description" />
+      <Button fx:id="deleteItemButton" layoutX="13.0" layoutY="154.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="26.0" prefWidth="93.0" text="Delete Item" />
    </children>
    <opaqueInsets>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
