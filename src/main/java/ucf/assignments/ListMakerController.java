@@ -14,9 +14,11 @@ public class ListMakerController {
     public void addNewItemButtonPressed(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void newItemTitleTextEntered(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void newItemDescriptionTextEntered(ActionEvent actionEvent) {
     }
 }
