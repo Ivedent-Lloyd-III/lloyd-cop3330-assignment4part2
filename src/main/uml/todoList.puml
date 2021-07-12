@@ -16,7 +16,7 @@ class ListMakerController {
         - TextField newItemTitleTextField;
         - TextField newItemDueDateTextField;
         - Button addNewItemButton;
-        - TextField newItemDescriptioinTextField;
+        - TextField newItemDescriptionTextField;
         - Button deleteItemButton;
 
         +public void initialize(URL location, ResourceBundle resources)

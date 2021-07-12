@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ucf.assignments.ListMakerControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-12T02:23:32" hostname="LAPTOP-RE464V6H" time="0.013">
+  <properties/>
+  <testcase name="deleteButtonClicked()" classname="ucf.assignments.ListMakerControllerTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

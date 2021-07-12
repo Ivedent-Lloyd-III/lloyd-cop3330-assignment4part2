@@ -6,13 +6,16 @@ package ucf.assignments;
  */
 
 public class items {
-
+    // there are 4 variables the user can control, name, description, data and completion status
+    // all will be input as strings
+    // autocomplete getters and setters
     private String itemName;
     private String itemDescription;
     private String itemStatus;
     private String itemDueDate;
 
     public items(){
+        // initialize all the input values
         this.itemName = "";
         this.itemDescription = "";
         this.itemStatus = "";
