@@ -51,12 +51,7 @@ public class ListMakerController implements Initializable {
 
     @FXML
     private Button deleteItemButton;
-    
 
-    ObservableList<items> list = FXCollections.observableArrayList(
-            new items("incompleted", "071321", "Wash Dog", "Wash the dog with shampoo"),
-            new items("completed", "071321", "Wash Car", "wash the car with soap")
-    );
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
