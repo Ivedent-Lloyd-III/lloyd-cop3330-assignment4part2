@@ -1,21 +1,50 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class ListMakerApp {
+class ListMakerApplication{
     +main()
     +start()
 }
 
 class ListMakerController {
-    +addNewItemButtonPressed()
+
+        - TableView<items> tableView;
+        - TableColumn<items, String> itemsStatusColumn;
+        - TableColumn<items, String> itemDueDateColumn;
+        - TableColumn<items, String> itemsNameColumn;
+        - TableColumn<items, String> itemsDescriptionColumn;
+        - TextField newItemTitleTextField;
+        - TextField newItemDueDateTextField;
+        - Button addNewItemButton;
+        - TextField newItemDescriptioinTextField;
+        - Button deleteItemButton;
+
+        +public void initialize(URL location, ResourceBundle resources)
+        +public void initializeTable()
+        +public void initializeColumns()
+        +public void editColumns()
+        +public void loadTableSampleData()
+        +public void addButtonClicked(ActionEvent actionEvent)
+        +public void deleteButtonClicked(ActionEvent actionEvent)
 }
 
-class todoListItemsTable {
+class items {
+
++ public items()
++ public items()
++ public void setItemName()
++ public void setItemDescription()
++ public void setItemStatus()
++ public void setItemDueDate()
++ public String getItemName()
++ public String getItemDescription()
++ public String getItemStatus()
++ public String getItemDueDate()
 
 }
 
-ListMakerApp - ListMakerController
-ListMakerController -- todoListItemsTable
-javafx.Application <|-- ListMakerApp
+ListMakerApplication - ListMakerController
+ListMakerController -- items
+javafx.Application <|-- ListMakerApplication
 
 @enduml
