@@ -2,7 +2,5 @@ ucf/assignments/ListMakerApplication.java
  ucf.assignments.ListMakerApplication
 ucf/assignments/items.java
  ucf.assignments.items
-ucf/assignments/listItems.java
- ucf.assignments.listItems
 ucf/assignments/ListMakerController.java
  ucf.assignments.ListMakerController

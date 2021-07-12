@@ -7,14 +7,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="604.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListMakerController">
+<AnchorPane prefHeight="519.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListMakerController">
    <children>
-      <TableView fx:id="tableView" layoutX="187.0" layoutY="14.0" prefHeight="577.0" prefWidth="639.0">
+      <TableView fx:id="tableView" layoutX="187.0" layoutY="14.0" prefHeight="474.0" prefWidth="664.0">
         <columns>
-          <TableColumn fx:id="itemsStatusColumn" prefWidth="104.00001525878906" text="Status" />
-          <TableColumn fx:id="itemDueDateColumn" minWidth="9.5999755859375" prefWidth="76.800048828125" text="Due Date" />
-            <TableColumn fx:id="itemsNameColumn" prefWidth="151.2000732421875" text="Item" />
-            <TableColumn fx:id="itemsDescriptionColumn" prefWidth="310.39990234375" text="Description" />
+          <TableColumn fx:id="itemsStatusColumn" prefWidth="112.00003051757812" text="Status" />
+          <TableColumn fx:id="itemDueDateColumn" minWidth="9.5999755859375" prefWidth="83.99993896484375" text="Due Date" />
+            <TableColumn fx:id="itemsNameColumn" prefWidth="156.80007934570312" text="Item" />
+            <TableColumn fx:id="itemsDescriptionColumn" prefWidth="310.4000244140625" text="Description" />
         </columns>
       </TableView>
       <TextField fx:id="newItemTitleTextField" layoutX="14.0" layoutY="14.0" promptText="New Item Title" />
