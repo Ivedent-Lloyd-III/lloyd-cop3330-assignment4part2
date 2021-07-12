@@ -64,12 +64,6 @@ public class ListMakerController implements Initializable {
         loadTableSampleData();
         initializeTable();
 
-       // itemsStatusColumn.setCellValueFactory(new PropertyValueFactory<listItems, String>("itemStatus"));
-       // itemDueDateColumn.setCellValueFactory(new PropertyValueFactory<listItems, String>("itemDueDate"));
-       // itemsNameColumn.setCellValueFactory(new PropertyValueFactory<listItems, String>("itemName"));
-       // itemsDescriptionColumn.setCellValueFactory(new PropertyValueFactory<listItems, String>("itemDescription"));
-
-       // tableView.setItems(list);
     }
 
     public void initializeTable(){
