@@ -6,6 +6,8 @@ this application was coded as a demo which means some of the list is already com
 
 to add a new item fill in text boxes with the required data in the format the user desires and click "Add New Item"
 
+the date can be filled in as YYYY-MM-DD or any way the user desires
+
 to mark an item as completed simply double click the cell under "status" and type in "completed" or "incomplete"... "i" or "c" also works
 
 to edit an item simply double click the cell you wish to change and fill in that cell with the new data 
