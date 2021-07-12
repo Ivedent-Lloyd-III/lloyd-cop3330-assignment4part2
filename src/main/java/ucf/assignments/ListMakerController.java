@@ -101,12 +101,12 @@ public class ListMakerController implements Initializable {
     public void loadTableSampleData(){
 
         ObservableList<items> sampleData = FXCollections.observableArrayList();
-        sampleData.add(new items("incompleted", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
-        sampleData.add(new items("incompleted", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
         sampleData.add(new items("completed", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
-        sampleData.add(new items("completed", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
-        sampleData.add(new items("completed", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
-        sampleData.add(new items("completed", "2021-07-11", "Assignment 4", "design a gui that makes a todo list"));
+        sampleData.add(new items("incomplete", "2021-07-13", "Assignment 5", "design a gui for a guessing game"));
+        sampleData.add(new items("completed", "2021-07-15", "Homework 5", "turn in early for bonus"));
+        sampleData.add(new items("incomplete", "2021-07-17", "Bonus 4", "boosts homework grade by 5"));
+        sampleData.add(new items("incomplete", "2021-07-21", "Assignment 6", "details not released yet"));
+        sampleData.add(new items("incomplete", "2021-07-22", "Exam 2", "study the last 3 chapters"));
 
         tableView.setItems(sampleData);
     }
